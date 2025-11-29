@@ -36,14 +36,21 @@ The API will be available at:
 - **API Docs**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/health
 
+## Requirements
+
+- Python 3.8+
+- See `requirements.txt` for dependencies
+
+## DEMO
+
+https://github.com/user-attachments/assets/e4efa101-4838-4f9e-ab62-c1980d56a32c
+
 ## Running Tests
 
 ```bash
 pytest tests/ -v --disable-warnings
 ```
 
-## Requirements
+https://github.com/user-attachments/assets/e04ec869-d4cd-47f9-8c2a-02d54a98bef9
 
-- Python 3.8+
-- See `requirements.txt` for dependencies
 
