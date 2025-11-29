@@ -6,7 +6,16 @@ Boustrophedon-based coverage path planning for wall-finishing robots with obstac
 - **[Algorithm Documentation](ALGO.md)** - Detailed explanation of the coverage path planning algorithm
 - **[How It Works](HOW_IT_WORKS.md)** - System overview and workflow
 
-## Installation
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/THARAGESHWARAN-SATHYAMOORTHY/10xConstruction.git
+cd 10xConstruction
+```
+
+### 2. Installation
 
 ```bash
 # Run setup script
@@ -15,7 +24,7 @@ Boustrophedon-based coverage path planning for wall-finishing robots with obstac
 
 This creates a virtual environment and installs all dependencies.
 
-## Getting Started
+### 3. Running the Application
 
 ```bash
 # Start the server
