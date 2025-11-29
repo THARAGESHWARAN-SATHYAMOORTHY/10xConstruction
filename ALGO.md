@@ -24,9 +24,9 @@ INPUT: wall_width, wall_height, tool_width, obstacles[]
 OUTPUT: path_segments[], metadata
 
 BEGIN
-    // ============================================
-    // PHASE 1: CELL DECOMPOSITION
-    // ============================================
+     ============================================
+    |       PHASE 1: CELL DECOMPOSITION.         |
+     ============================================
     
     Step 1.1: Collect critical x-coordinates
         critical_x = [0, wall_width]
@@ -69,9 +69,9 @@ BEGIN
                 cells.APPEND(Cell(x_left, x_right, current_y, wall_height, cell_id))
                 cell_id = cell_id + 1
     
-    // ============================================
-    // PHASE 2: PATTERN GENERATION
-    // ============================================
+     ============================================
+    |       PHASE 2: PATTERN GENERATION          |
+     ============================================
     
     Step 2.1: Generate zig-zag patterns for each cell
         cell_patterns = {}
@@ -103,9 +103,9 @@ BEGIN
             
             cell_patterns[cell.id] = segments
     
-    // ============================================
-    // PHASE 3: TSP OPTIMIZATION
-    // ============================================
+     ============================================
+    |         PHASE 3: TSP OPTIMIZATION          |
+     ============================================
     
     Step 3.1: Greedy nearest-neighbor ordering
         visited = SET()
@@ -164,9 +164,9 @@ BEGIN
         
         cell_order = best_order
     
-    // ============================================
-    // PHASE 4: PATH ASSEMBLY
-    // ============================================
+     ============================================
+    |          PHASE 4: PATH ASSEMBLY            |
+     ============================================
     
     Step 4.1: Combine patterns with transitions
         path_segments = []
