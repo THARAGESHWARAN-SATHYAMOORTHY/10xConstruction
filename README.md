@@ -53,4 +53,11 @@ pytest tests/ -v --disable-warnings
 
 https://github.com/user-attachments/assets/e04ec869-d4cd-47f9-8c2a-02d54a98bef9
 
+## Interface
+
+<img width="1624" height="968" alt="Screenshot 2025-11-29 at 4 18 01 PM" src="https://github.com/user-attachments/assets/29abb959-7c06-4095-b7b2-56f9d25403e1" />
+<img width="1624" height="968" alt="Screenshot 2025-11-29 at 4 18 12 PM" src="https://github.com/user-attachments/assets/dd57503d-08fd-484d-8312-6887adb3607d" />
+<img width="1624" height="968" alt="Screenshot 2025-11-29 at 4 18 19 PM" src="https://github.com/user-attachments/assets/c48efe2a-8654-48ad-a864-5614ba28633e" />
+<img width="1624" height="968" alt="Screenshot 2025-11-29 at 4 18 23 PM" src="https://github.com/user-attachments/assets/7804db78-2c6d-44cc-ac9c-5df3e7a3a65d" />
+
 
