@@ -66,7 +66,7 @@ class TrajectoryResponse(BaseModel):
     coverage_length: float
     transition_length: float
     coverage_percentage: float
-    execution_time_ms: int
+    execution_time_ms: float
     num_cells: int
     created_at: datetime
     path_segments: List[PathSegmentResponse] = []
@@ -86,7 +86,7 @@ class PlanResponse(BaseModel):
     coverage_length: float
     transition_length: float
     coverage_percentage: float
-    execution_time_ms: int
+    execution_time_ms: float
     num_cells: int
     num_segments: int
     path_segments: List[PathSegmentResponse]

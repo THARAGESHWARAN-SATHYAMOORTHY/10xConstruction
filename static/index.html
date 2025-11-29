@@ -758,6 +758,8 @@
             const container = document.getElementById('statisticsContent');
             const toolW = parseFloat(document.getElementById('toolWidth').value);
             const avgSeg = metadata.num_segments > 0 ? (metadata.total_length / metadata.num_segments).toFixed(2) : "0.00";
+            const wallArea = (wallWidth * wallHeight).toFixed(2);
+            const coverageToTransition = metadata.transition_length > 0 ? (metadata.coverage_length / metadata.transition_length).toFixed(2) : "N/A";
             
             container.innerHTML = `
                 <div class="stats-grid">
@@ -787,7 +789,7 @@
                     </div>
                     <div class="stat-card">
                         <h4>Planning Time</h4>
-                        <div class="value">${metadata.execution_time_ms}<span class="unit">ms</span></div>
+                        <div class="value">${metadata.execution_time_ms.toFixed(2)}<span class="unit">ms</span></div>
                     </div>
                     <div class="stat-card">
                         <h4>Tool Width</h4>
@@ -805,12 +807,16 @@
                         <span class="detail-value">${wallWidth.toFixed(1)}m × ${wallHeight.toFixed(1)}m</span>
                     </div>
                     <div class="detail-row">
+                        <span class="detail-label">Wall Area:</span>
+                        <span class="detail-value">${wallArea}m²</span>
+                    </div>
+                    <div class="detail-row">
                         <span class="detail-label">Number of Obstacles:</span>
                         <span class="detail-value">${obstacles.length}</span>
                     </div>
                     <div class="detail-row">
-                        <span class="detail-label">Coverage Ratio:</span>
-                        <span class="detail-value">${metadata.coverage_percentage.toFixed(1)}%</span>
+                        <span class="detail-label">Coverage to Transition Ratio:</span>
+                        <span class="detail-value">${coverageToTransition}</span>
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">Average Segment Length:</span>

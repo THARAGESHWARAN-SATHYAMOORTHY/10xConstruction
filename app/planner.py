@@ -104,7 +104,7 @@ class BoustrophedonPlanner:
         path_segments = self._assemble_path(cells, cell_patterns, cell_order)
         
         # Calculate metrics
-        execution_time_ms = int((time.time() - start_time) * 1000)
+        execution_time_ms = round((time.time() - start_time) * 1000, 2)
         
         coverage_length = sum(seg.length for seg in path_segments if seg.segment_type == 'coverage')
         transition_length = sum(seg.length for seg in path_segments if seg.segment_type == 'transition')
