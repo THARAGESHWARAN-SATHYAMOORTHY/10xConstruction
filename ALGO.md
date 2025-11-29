@@ -22,7 +22,8 @@ ALGORITHM: Boustrophedon Coverage Path Planning
 
 INPUT: wall_width, wall_height, tool_width, obstacles[]
 OUTPUT: path_segments[], metadata
-
+```
+```
 BEGIN
      ============================================
     |       PHASE 1: CELL DECOMPOSITION.         |
@@ -68,7 +69,8 @@ BEGIN
             IF current_y < wall_height - EPSILON:
                 cells.APPEND(Cell(x_left, x_right, current_y, wall_height, cell_id))
                 cell_id = cell_id + 1
-    
+```
+```
      ============================================
     |       PHASE 2: PATTERN GENERATION          |
      ============================================
@@ -102,7 +104,8 @@ BEGIN
                 direction = direction * -1  // Alternate direction
             
             cell_patterns[cell.id] = segments
-    
+```
+```    
      ============================================
     |         PHASE 3: TSP OPTIMIZATION          |
      ============================================
@@ -163,7 +166,8 @@ BEGIN
                     BREAK
         
         cell_order = best_order
-    
+```
+```   
      ============================================
     |          PHASE 4: PATH ASSEMBLY            |
      ============================================
