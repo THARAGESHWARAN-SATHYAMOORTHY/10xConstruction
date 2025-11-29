@@ -2,8 +2,9 @@
 
 Boustrophedon-based coverage path planning for wall-finishing robots with obstacle avoidance.
 
-
-**[View Algorithm Documentation](ALGO.md)** - Detailed explanation of the coverage path planning algorithm
+**Documentation**:
+- **[Algorithm Documentation](ALGO.md)** - Detailed explanation of the coverage path planning algorithm
+- **[How It Works](HOW_IT_WORKS.md)** - System overview and workflow
 
 ## Installation
 
