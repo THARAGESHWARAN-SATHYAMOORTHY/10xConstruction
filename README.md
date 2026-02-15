@@ -1,8 +1,7 @@
-# Coverage Path Planning System
+# Coverage Path Planning System [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/THARAGESHWARAN-SATHYAMOORTHY/10xConstruction)
+
 
 Boustrophedon-based coverage path planning for wall-finishing robots with obstacle avoidance.
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/THARAGESHWARAN-SATHYAMOORTHY/10xConstruction)
 
 **Documentation**:
 - **[Algorithm Documentation](ALGO.md)** - Detailed explanation of the coverage path planning algorithm
